@@ -14,14 +14,13 @@ int main(void)
 	{
 		while (j <= '9')
 		{
-			if (!(i > j) || i != j)
+			if (!(i > j || i == j))
 			{
 				putchar(i);
 				putchar(j);
-				if (i == '8' && j == '9')
+				if (i == '0' && j == '9')
 				{
 					putchar('\n');
-					return (0);
 				}
 				else
 				{
@@ -29,10 +28,10 @@ int main(void)
 					putchar(' ');
 				}
 			}
-		j++;
+			j++;
 		}
-	j = '0';
-	i++;
+		j = '0';
+		i++;
 	}
 	return (0);
 }
