@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
- *main - Entry Point
- *
- *Return: Always 0 (Success)
+ * main - print numbers from 00 to 99.
+(*
+ * Return: 0 on success
  */
-
 int main(void)
 {
 	int i = '0';
@@ -18,7 +17,7 @@ int main(void)
 			{
 				putchar(i);
 				putchar(j);
-				if (i == 'J' && j == '9')
+				if (i == '8' && j == '9')
 				{
 					putchar('\n');
 				}
